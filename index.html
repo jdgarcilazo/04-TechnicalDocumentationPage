@@ -8,46 +8,46 @@
     </head>
     <body>
         <nav id="navbar">
-            <header>JS Documentation</header>
+            <header>C++ Documentation</header>
             <ul>
                 <li>
                     <a class="nav-link" href="#Introduction">Introduction</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#JavaScript_and_Java">Javascript and Java</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#Hello_world">Hello world</a>
+                    <a class="nav-link" href="#varlitconst">C++ Variables, Literals and Constants</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#Variables">Variables</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+                    <a class="nav-link" href="#literals">C++ Literals</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Variable_scope">Variable scope</a>
+                    <a class="nav-link" href="#Constants">C++ Constants</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Global_variables">Global variables</a>
+                    <a class="nav-link" href="#DataTypes">C++ Data Types</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Constants">Constants</a>
+                    <a class="nav-link" href="#BasicInputOutput">C++ Basic Input/Output</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Data_types">Data types</a>
+                    <a class="nav-link" href="#TypeConversion">C++ Type Conversion</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#If...else_statement">If..else statement</a>
+                    <a class="nav-link" href="#Operators">C++ Operators</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#While_statement">While statement</a>
+                    <a class="nav-link" href="#if...else">C++ if, if...else and Nested if...else</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Function_declarations">Function declarations</a>
+                    <a class="nav-link" href="#forLoop">C++ for Loop</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#do...whileLoop">C++ while and do...while Loop</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#switch..caseStatement">C++ switch..case Statement</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#Reference">Reference</a>
@@ -59,393 +59,364 @@
                 <header>Introduction</header>
                 <article>
                     <p>
-                        JavaScript is a cross-platform, object-oriented scripting language. It
-                        is a small and lightweight language. Inside a host environment (for
-                        example, a web browser), JavaScript can be connected to the objects of
-                        its environment to provide programmatic control over them.
+                        C++ is a powerful general-purpose programming language. 
+                        It can be used to develop operating systems, browsers, games, and so on. 
+                        C++ supports different ways of programming like:                         
                     </p>                
-                    <p>
-                        JavaScript contains a standard library of objects, such as Array, Date,
-                        and Math, and a core set of language elements such as operators, control
-                        structures, and statements. Core JavaScript can be extended for a
-                        variety of purposes by supplementing it with additional objects; for
-                        example:
-                    </p>
-                      <ul>
-                        <li>
-                          Client-side JavaScript extends the core language by supplying objects
-                          to control a browser and its Document Object Model (DOM). For example,
-                          client-side extensions allow an application to place elements on an
-                          HTML form and respond to user events such as mouse clicks, form input,
-                          and page navigation.
-                        </li>
-                        <li>
-                          Server-side JavaScript extends the core language by supplying objects
-                          relevant to running JavaScript on a server. For example, server-side
-                          extensions allow an application to communicate with a database,
-                          provide continuity of information from one invocation to another of
-                          the application, or perform file manipulations on a server.
-                        </li>
-                      </ul>
-                </article>
-            </section>
-            <section class="main-section" id="What_you_should_already_know">
-                <header>What you should already know</header>
-                <article>
-                    <p>This guide assumes you have the following basic background:</p>
                     <ul>
                         <li>
-                        A general understanding of the Internet and the World Wide Web (WWW).
+                            procedural
                         </li>
-                        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
                         <li>
-                        Some programming experience. If you are new to programming, try one of
-                        the tutorials linked on the main page about JavaScript.
+                            object-oriented
+                        </li>
+                        <li>
+                            functional
+                        </li>
+                      </ul>
+                    <p>
+                        This makes C++ powerful as well as flexible.
+                        Our C++ programming tutorial will guide you to learn C++ programming one step at a time.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="varlitconst">
+                <header>C++ Variables, Literals and Constants</header>
+                <article>
+                    <p>In this tutorial, we will learn about:</p>
+                    <ul>
+                        <li>
+                        variables
+                        </li>
+                        <li>literals</li>
+                        <li>
+                        constants
+                        </li>
+                    </ul>
+                    <p>in C++ with the help of examples.</p>
+                </article>
+              </section>
+              <section class="main-section" id="Variables">
+                <header>C++ Variables</header>
+                <article>
+                    <p>
+                        In programming, a variable is a container (storage area) to hold data.
+                        To indicate the storage area, each variable should be given a unique name (identifier). 
+                        For example,
+                    </p>                
+                    <code>
+                        int age = 14;
+                    </code>
+                    <p>
+                        Here, age is a variable of the int data type, and we have assigned an integer value 14 to it.
+                    </p>
+                    <p>
+                        Rules for naming a variable
+                    </p>
+                    <ul>
+                        <li>
+                            A variable name can only have alphabets, numbers, and the underscore _.
+                        </li>
+                        <li>
+                            A variable name cannot begin with a number.
+                        </li>
+                        <li>
+                            It is a preferred practice to begin variable names with a lowercase character. For example, name is preferable to Name.
+                        </li>
+                        <li>A variable name cannot be a keyword. For example, int is a keyword that is used to denote integers.</li>
+                        <li>
+                            A variable name can start with an underscore. However, it's not considered a good practice.
                         </li>
                     </ul>
                 </article>
               </section>
-              <section class="main-section" id="JavaScript_and_Java">
-                <header>JavaScript and Java</header>
+              <section class="main-section" id="literals">
+                <header>C++ Literals</header>
                 <article>
                     <p>
-                        JavaScript and Java are similar in some ways but fundamentally different
-                        in some others. The JavaScript language resembles Java but does not have
-                        Java's static typing and strong type checking. JavaScript follows most
-                        Java expression syntax, naming conventions and basic control-flow
-                        constructs which was the reason why it was renamed from LiveScript to
-                        JavaScript.
-                    </p>                
-                    <p>
-                        In contrast to Java's compile-time system of classes built by
-                        declarations, JavaScript supports a runtime system based on a small
-                        number of data types representing numeric, Boolean, and string values.
-                        JavaScript has a prototype-based object model instead of the more common
-                        class-based object model. The prototype-based model provides dynamic
-                        inheritance; that is, what is inherited can vary for individual objects.
-                        JavaScript also supports functions without any special declarative
-                        requirements. Functions can be properties of objects, executing as
-                        loosely typed methods.
+                        Literals are data used for representing fixed values. They can be used directly in the code. For example: 1, 2.5, 'c' etc.
                     </p>
                     <p>
-                        JavaScript is a very free-form language compared to Java. You do not
-                        have to declare all variables, classes, and methods. You do not have to
-                        be concerned with whether methods are public, private, or protected, and
-                        you do not have to implement interfaces. Variables, parameters, and
-                        function return types are not explicitly typed.
-                    </p>
-                </article>
-              </section>
-              <section class="main-section" id="Hello_world">
-                <header>Hello world</header>
-                <article>
-                    <p>
-                        To get started with writing JavaScript, open the Scratchpad and write your
-                        first "Hello world" JavaScript code:
-                    </p>
-                    <code
-                        >function greetMe(yourName) { alert("Hello " + yourName); }
-                        greetMe("World");
-                    </code>
-                    <p>
-                        Select the code in the pad and hit Ctrl+R to watch it unfold in your
-                        browser!
-                    </p>
-                </article>
-              </section>
-              <section class="main-section" id="Variables">
-                <header>Variables</header>
-                <article>
-                    <p>
-                    You use variables as symbolic names for values in your application. The
-                    names of variables, called identifiers, conform to certain rules.
-                    </p>
-                    <p>
-                    A JavaScript identifier must start with a letter, underscore (_), or
-                    dollar sign ($); subsequent characters can also be digits (0-9). Because
-                    JavaScript is case sensitive, letters include the characters "A" through
-                    "Z" (uppercase) and the characters "a" through "z" (lowercase).
-                    </p>
-                    <p>
-                    You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-                    You can also use the Unicode escape sequences as characters in
-                    identifiers. Some examples of legal names are Number_hits, temp99, and
-                    _name.
-                    </p>
-                </article>
-              </section>
-              <section class="main-section" id="Declaring_Variables">
-                <header>Declaring variables</header>
-                <article>
-                    <p>
-                    You can declare a variable in three ways:
-                    </p>
-                    <p>
-                        With the keyword var. For example, <code>var x = 42.</code> This syntax
-                        can be used to declare both local and global variables.
-                    </p>
-                    <p>
-                        By simply assigning it a value. For example, <code>x = 42.</code> This
-                        always declares a global variable. It generates a strict JavaScript
-                        warning. You shouldn't use this variant.
-                    </p>
-                    <p>
-                        With the keyword let. For example,<code> let y = 13.</code> This syntax
-                        can be used to declare a block scope local variable. See Variable scope
-                        below.
-                    </p>
-                </article>
-              </section>
-              <section class="main-section" id="Variable_scope">
-                <header>Variable scope</header>
-                <article>
-                    <p>
-                        When you declare a variable outside of any function, it is called a
-                        global variable, because it is available to any other code in the
-                        current document. When you declare a variable within a function, it is
-                        called a local variable, because it is available only within that
-                        function.
-                    </p>            
-                    <p>
-                        JavaScript before ECMAScript 2015 does not have block statement scope;
-                        rather, a variable declared within a block is local to the function (or
-                        global scope) that the block resides within. For example the following
-                        code will log 5, because the scope of x is the function (or global
-                        context) within which x is declared, not the block, which in this case
-                        is an if statement.
-                    </p>
-                    <code>if (true) { var x = 5; } console.log(x); // 5</code>
-                    <p>
-                        This behavior changes, when using the let declaration introduced in
-                        ECMAScript 2015.
-                    </p>
-                    <code
-                        >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-                        defined
-                    </code>
-                    <p>
-
-                    </p>
-                </article>
-              </section>
-              <section class="main-section" id="Global_variables">
-                <header>Global variables</header>
-                <article>
-                    <p>
-                        Global variables are in fact properties of the global object. In web
-                        pages the global object is window, so you can set and access global
-                        variables using the window.variable syntax.
-                    </p>
-                
-                    <p>
-                        Consequently, you can access global variables declared in one window or
-                        frame from another window or frame by specifying the window or frame
-                        name. For example, if a variable called phoneNumber is declared in a
-                        document, you can refer to this variable from an iframe as
-                        parent.phoneNumber.
+                        Here, 1, 2.5 and 'c' are literals. Why? You cannot assign different values to these terms.
                     </p>
                 </article>
               </section>
               <section class="main-section" id="Constants">
-                <header>Constants</header>
+                <header>C++ Constants</header>
                 <article>
                     <p>
-                        You can create a read-only, named constant with the const keyword. The
-                        syntax of a constant identifier is the same as for a variable
-                        identifier: it must start with a letter, underscore or dollar sign and
-                        can contain alphabetic, numeric, or underscore characters.
-                    </p>                
-                    <code>const PI = 3.14;</code>
-                    <p>
-                        A constant cannot change value through assignment or be re-declared
-                        while the script is running. It has to be initialized to a value.
+                        In C++, we can create variables whose value cannot be changed. 
+                        For that, we use the const keyword. Here's an example:
                     </p>
+                    <code>
+                        const int LIGHT_SPEED = 299792458;
+                        LIGHT_SPEED = 2500 // Error! LIGHT_SPEED is a constant.
+                    </code>
                     <p>
-                        The scope rules for constants are the same as those for let block scope
-                        variables. If the const keyword is omitted, the identifier is assumed to
-                        represent a variable.
+                        Here, we have used the keyword const to declare a constant named LIGHT_SPEED. 
+                        If we try to change the value of LIGHT_SPEED, we will get an error.
+                        A constant can also be created using the #define preprocessor directive. 
+                        We will learn about it in detail in the C++ Macros tutorial.
                     </p>
+                </article>
+              </section>
+              <section class="main-section" id="DataTypes">
+                <header>C++ Data Types</header>
+                <article>
                     <p>
-                        You cannot declare a constant with the same name as a function or
-                        variable in the same scope. For example:
+                        In this tutorial, we will learn about basic data types such as int, float, char, etc. in C++ programming with the help of examples.
+                        In C++, data types are declarations for variables. This determines the type and size of data associated with variables. For example,
                     </p>
-                    <code
-                        >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-                        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+                    <code>
+                        int age = 13;
+                    </code>
+                    <p>
+                        Here, age is a variable of type int. Meaning, the variable can only store integers of either 2 or 4 bytes.
+                    </p>
+                </article>
+              </section>
+              <section class="main-section" id="BasicInputOutput">
+                <header>C++ Basic Input/Output</header>
+                <article>
+                    <p>
+                        In this tutorial, we will learn to use the cin object to take input from the user, 
+                        and the cout object to display output to the user with the help of examples.
+                    </p>            
+                    <p>
+                        In C++, cout sends formatted output to standard output devices, 
+                        such as the screen. We use the cout object along with the << operator for displaying output.
+                    </p>
+                    <code>
+                        #include <iostream>
+                        using namespace std;
+                        
+                        int main() {
+                            // prints the string enclosed in double quotes
+                            cout << "This is C++ Programming";
+                            return 0;
                         }
                     </code>
-                    However, object attributes are not protected, so the following statement
-                    is executed without problems.
-                    <code
-                        >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
-                    </code>
-                    <p>
-
-                    </p>
                 </article>
               </section>
-              <section class="main-section" id="Data_types">
-                <header>Data types</header>
+              <section class="main-section" id="TypeConversion">
+                <header>C++ Type Conversion</header>
                 <article>
-                    <p>The latest ECMAScript standard defines seven data types:</p>
-                    <ul>
+                    <p>
+                        In this tutorial, we will learn about the basics of C++ type conversion with the help of examples.
+                        C++ allows us to convert data of one type to that of another. This is known as type conversion.
+                        There are two types of type conversion in C++.
+                    </p>
+                    <ol>
                         <li>
-                        <p>Six data types that are primitives:</p>
+                            Implicit Conversion.
+                        </li>
+                        <li>
+                            Explicit Conversion (also known as Type Casting).
+                        </li>
+                    </ol>                
+                    <code>
+                        // Working of implicit type-conversion
+                        #include <iostream>
+                        using namespace std;
+
+                        int main() {
+                        // assigning an int value to num_int
+                        int num_int = 9;
+
+                        // declaring a double type variable
+                        double num_double;
+                        
+                        // implicit conversion
+                        // assigning int value to a double variable
+                        num_double = num_int;
+
+                        cout << "num_int = " << num_int << endl;
+                        cout << "num_double = " << num_double << endl;
+
+                        return 0;
+                        }
+                    </code>
+                </article>
+              </section>
+              <section class="main-section" id="Operators">
+                <header>C++ Operators</header>
+                <article>
+                    <p>
+                        In this tutorial, we will learn about the different types of operators in C++ with the help of examples. 
+                        In programming, an operator is a symbol that operates on a value or a variable.
+                        Operators are symbols that perform operations on variables and values. 
+                        For example, + is an operator used for addition, while - is an operator used for subtraction.
+                        Operators in C++ can be classified into 6 types:
+                    </p> 
+                    <ol>
+                        <li>Arithmetic Operators</li>
+                        <li>
+                            Assignment Operators
+                        </li>
+                        <li>Relational Operators</li>
+                        <li>Logical Operators</li>
+                        <li>Bitwise Operators</li>
+                        <li>
+                            Other Operators
+                        </li>
+                    </ol>
+                </article>
+              </section>
+              <section class="main-section" id="if...else">
+                <header>C++ if, if...else and Nested if...else</header>
+                <article>
+                    <p>In this tutorial, we will learn about the if...else statement to create decision making programs with the help of examples.
+                        In computer programming, we use the if...else statement to run one block of code under certain conditions and another block of code under different conditions.                     
+                        For example, assigning grades (A, B, C) based on marks obtained by a student.</p>
                         <ul>
-                            <li>Boolean. true and false.</li>
+                            <li>if the percentage is above 90, assign grade A</li>
                             <li>
-                            null. A special keyword denoting a null value. Because JavaScript
-                            is case-sensitive, null is not the same as Null, NULL, or any
-                            other variant.
+                                if the percentage is above 75, assign grade B
                             </li>
-                            <li>undefined. A top-level property whose value is undefined.</li>
-                            <li>Number. 42 or 3.14159.</li>
-                            <li>String. "Howdy"</li>
-                            <li>
-                            Symbol (new in ECMAScript 2015). A data type whose instances are
-                            unique and immutable.
-                            </li>
+                            <li>if the percentage is above 65, assign grade C</li>
                         </ul>
-                        </li>                
-                        <li>and Object</li>
-                    </ul>
-                    <p>
-                        Although these data types are a relatively small amount, they enable you
-                        to perform useful functions with your applications. Objects and functions
-                        are the other fundamental elements in the language. You can think of
-                        objects as named containers for values, and functions as procedures that
-                        your application can perform.
-                    </p>
+                    <code>
+                        // Program to print positive number entered by the user
+                        // If the user enters a negative number, it is skipped
+                        
+                        #include <iostream>
+                        using namespace std;
+                        
+                        int main() {
+                        
+                          int number;
+                        
+                          cout << "Enter an integer: ";
+                          cin >> number;
+                        
+                          // checks if the number is positive
+                          if (number > 0) {
+                            cout << "You entered a positive integer: " << number << endl;
+                          }
+                        
+                          cout << "This statement is always executed.";
+                        
+                          return 0;
+                        }
+                    </code>
                 </article>
               </section>
-              <section class="main-section" id="If...else_statement">
-                <header>If...else statement</header>
+              <section class="main-section" id="forLoop">
+                <header>C++ for Loop</header>
                 <article>
                     <p>
-                        Use the if statement to execute a statement if a logical condition is
-                        true. Use the optional else clause to execute a statement if the condition
-                        is false. An if statement looks as follows:
+                        In this tutorial, we will learn about the C++ for loop and its working with the help of some examples.
+                        In computer programming, loops are used to repeat a block of code.
+                        For example, let's say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.
+                        That was just a simple example; we can achieve much more efficiency and sophistication in our programs by making effective use of loops.
+                        There are 3 types of loops in C++.
                     </p>
-                    <code>if (condition) { statement_1; } else { statement_2; }</code>
-                    <p>
-                        condition can be any expression that evaluates to true or false. See
-                        Boolean for an explanation of what evaluates to true and false. If
-                        condition evaluates to true, statement_1 is executed; otherwise,
-                        statement_2 is executed. statement_1 and statement_2 can be any statement,
-                        including further nested if statements.
-                    </p>
-                    <p>
-                        You may also compound the statements using else if to have multiple
-                        conditions tested in sequence, as follows:
-                    </p>
+                    <ul>
+                        <li>for loop</li>
+                        <li>
+                            while loop
+                        </li>
+                        <li>do...while loop</li>
+                    </ul>
                     <code
-                        >if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-                        } else if (condition_n) { statement_n; } else { statement_last; }
-                    </code>
-                    <p>
-                        In the case of multiple conditions only the first logical condition which
-                        evaluates to true will be executed. To execute multiple statements, group
-                        them within a block statement ({ ... }) . In general, it's good practice
-                        to always use block statements, especially when nesting if statements:
-                    </p>
-                    <code
-                        >if (condition) { statement_1_runs_if_condition_is_true;
-                        statement_2_runs_if_condition_is_true; } else {
-                        statement_3_runs_if_condition_is_false;
-                        statement_4_runs_if_condition_is_false; }
-                    </code>
-                    <p>
-                        It is advisable to not use simple assignments in a conditional expression,
-                        because the assignment can be confused with equality when glancing over
-                        the code. For example, do not use the following code:
-                    </p>
-                    <code>if (x = y) { /* statements here */ }</code> 
-                    <p>
-                        If you need to use an
-                        assignment in a conditional expression, a common practice is to put
-                        additional parentheses around the assignment. For example:
-                    </p>
-                    <code>if ((x = y)) { /* statements here */ }</code>
-                    <p>
+                        >#include <iostream>
 
-                    </p>
+                            using namespace std;
+                            
+                            int main() {
+                                    for (int i = 1; i <= 5; ++i) {
+                                    cout << i << " ";
+                                }
+                                return 0;
+                            } else if (condition_n) { statement_n; } else { statement_last; }
+                    </code>
                 </article>
               </section>
-              <section class="main-section" id="While_statement">
-                <header>While statement</header>
+              <section class="main-section" id="do...whileLoop">
+                <header>C++ while and do...while Loop</header>
                 <article>
                     <p>
-                        A while statement executes its statements as long as a specified condition
-                        evaluates to true. A while statement looks as follows:
+                        The syntax of the while loop is:
                     </p>
-                    <code>while (condition) statement</code> If the condition becomes false,
-                    statement within the loop stops executing and control passes to the
-                    statement following the loop.            
+                    <code>
+                        while (condition) {
+                            // body of the loop
+                        }
+                    </code>
                     <p>
-                        The condition test occurs before statement in the loop is executed. If
-                        the condition returns true, statement is executed and the condition is
-                        tested again. If the condition returns false, execution stops and
-                        control is passed to the statement following while.
-                    </p>                
-                    <p>
-                        To execute multiple statements, use a block statement ({ ... }) to group
-                        those statements.
-                    </p>
-                    <p>
-                    Example:
-                    </p>
-                    <p>The following while loop iterates as long as n is less than three:</p>
-                    <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-                    <p>
-                        With each iteration, the loop increments n and adds that value to x.
-                        Therefore, x and n take on the following values:
+                        Here,
                     </p>
                     <ul>
-                        <li>After the first pass: n = 1 and x = 1</li>
-                        <li>After the second pass: n = 2 and x = 3</li>
-                        <li>After the third pass: n = 3 and x = 6</li>
+                        <li>A while loop evaluates the condition</li>
+                        <li>
+                            If the condition evaluates to true, the code inside the while loop is executed.
+                        </li>
+                        <li>The condition is evaluated again.</li>
+                        <li>This process continues until the condition is false.</li>
+                        <li>When the condition evaluates to false, the loop terminates.</li>
                     </ul>
-                    <p>
-                        After completing the third pass, the condition n &lt; 3 is no longer
-                        true, so the loop terminates.
-                    </p>
+                    <code>
+                        // C++ Program to print numbers from 1 to 5
+
+                        #include <iostream>
+                        
+                        using namespace std;
+                        
+                        int main() {
+                            int i = 1; 
+                        
+                            // while loop from 1 to 5
+                            while (i <= 5) {
+                                cout << i << " ";
+                                ++i;
+                            }
+                            
+                            return 0;
+                        }
+                    </code>
                 </article>
               </section>
-              <section class="main-section" id="Function_declarations">
-                <header>Function declarations</header>
+              <section class="main-section" id="switch..caseStatement">
+                <header>C++ switch..case Statement</header>
                 <article>
                     <p>
-                        A function definition (also called a function declaration, or function
-                        statement) consists of the function keyword, followed by:
+                        In this tutorial, we will learn about switch statement and its working in C++ programming with the help of some examples.
+                        The switch statement allows us to execute a block of code among many alternatives.                        
+                        The syntax of the switch statement in C++ is:
+                    </p>
+                    <code>
+                        switch (expression)  {
+                            case constant1:
+                                // code to be executed if 
+                                // expression is equal to constant1;
+                                break;
+                        
+                            case constant2:
+                                // code to be executed if
+                                // expression is equal to constant2;
+                                break;
+                                .
+                                .
+                                .
+                            default:
+                                // code to be executed if
+                                // expression doesn't match any constant
+                        }
+                    </code>
+                    <p>
+                        How does the switch statement work?
+                        The expression is evaluated once and compared with the values of each case label.
                     </p>
                     <ul>
-                        <li>The name of the function.</li>
                         <li>
-                        A list of arguments to the function, enclosed in parentheses and
-                        separated by commas.
+                            If there is a match, the corresponding code after the matching label is executed. 
+                            For example, if the value of the variable is equal to constant2, the code after case constant2: 
+                            is executed until the break statement is encountered.
                         </li>
                         <li>
-                        The JavaScript statements that define the function, enclosed in curly
-                        brackets, { }.
+                            If there is no match, the code after default: is executed.
                         </li>
                     </ul>
-                    <p>
-                        For example, the following code defines a simple function named square:
-                    </p>
-                    <code>function square(number) { return number * number; }</code>
-                    <p>
-                        The function square takes one argument, called number. The function
-                        consists of one statement that says to return the argument of the
-                        function (that is, number) multiplied by itself. The return statement
-                        specifies the value returned by the function.
-                    </p>
-                    <code>return number * number;</code>
-                    <p>
-                        Primitive parameters (such as a number) are passed to functions by
-                        value; the value is passed to the function, but if the function changes
-                        the value of the parameter, this change is not reflected globally or in
-                        the calling function.
-                    </p>
                 </article>
               </section>
               <section class="main-section" id="Reference">
@@ -455,9 +426,9 @@
                         <li>
                         All the documentation in this page is taken from
                         <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                            href="https://www.programiz.com/cpp-programming"
                             target="_blank"
-                            >MDN</a
+                            >Programiz</a
                         >
                         </li>
                     </ul>
